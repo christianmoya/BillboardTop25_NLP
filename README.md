@@ -9,7 +9,7 @@ I scraped the data from both Billboard and Genius *(found in BillboardTop100_Web
 ### Results 
 I made predictions with the song lyrics using two classifiers: Random Forest and Naive Bayes *(found in BillboardTop100_Model)*. Our baseline model performed with 67% accuracy. After stemming, lemmatizing and dealing with the class imbalance with SMOTE, our model accuracy improved to 76%, an increase of 9%. However, considering that roughly 25% of our data classify as a Top 25 hit, our model is just as good as guessing that the song will not be a Top 25 hit every single time, which is essentially what was happening in my baseline model. It looked that the model was too scared to classify songs as a Top 25 because there weren't as many Top 25 songs than not. Even when dealing with the imbalance using SMOTE, the accuracy score actually went down. Therefore, I fail to reject the altnerative hypothesis and say that words in a song have no impact on its rank in the Top 100. 
 
-(Accuracy Score for models) 
+![alt_text_here](classification_scores.png)
 
 ### Conclusion and Recommendations 
 Unfortunately, my models were not able to find what differentiates the Top 25 from the rest of the Top 100 and fail to prove that the words in a song have an impact on its rank. Knowing that, I recommend songwriters do the following: 
